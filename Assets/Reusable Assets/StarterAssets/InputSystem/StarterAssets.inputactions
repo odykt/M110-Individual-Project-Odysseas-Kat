@@ -45,7 +45,7 @@
                     "name": "InteractWithItem",
                     "type": "Button",
                     "id": "f032ac13-f1e8-4ca9-9f8a-6631d5a52098",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -54,7 +54,16 @@
                     "name": "ToggleMainMenu",
                     "type": "Button",
                     "id": "78c2e883-fd0f-4216-b971-a05056f608f6",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ItemInteraction",
+                    "type": "Button",
+                    "id": "b2f4ac14-3e57-40a9-9daa-6f7846919f2e",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -256,6 +265,17 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "ToggleMainMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36ed73bf-529c-4a19-a2b6-078aac87f23f",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "ItemInteraction",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
