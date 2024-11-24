@@ -5,6 +5,8 @@ public class MouseClicker : MonoBehaviour
 {
     Camera m_Camera;
     [SerializeField]
+    LayerMask m_LayerMask;
+    [SerializeField]
     UnityEvent mouseClickEvent;
 
     void Awake()
@@ -19,7 +21,7 @@ public class MouseClicker : MonoBehaviour
             Debug.Log("Left mouse click");
             Vector3 mousePosition = mouse.position.ReadValue();
             Ray ray = m_Camera.ScreenPointToRay(mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit))
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, m_LayerMask))
             {
                 Debug.Log("Raycast hit smth: " + hit.collider.name);
                 if (hit.collider.gameObject == this.gameObject)
